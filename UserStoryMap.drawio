@@ -1,0 +1,130 @@
+<mxfile host="app.diagrams.net" agent="Codex">
+  <diagram id="ekyc-usm-v2" name="User Story Map">
+    <mxGraphModel dx="2175" dy="1143" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1800" pageHeight="1220" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#16365C;strokeColor=#16365C;fontColor=#FFFFFF;fontStyle=1;fontSize=22;align=center;verticalAlign=middle;" value="USER STORY MAP — MỞ TÀI KHOẢN NGÂN HÀNG ONLINE CÓ XÁC THỰC eKYC" vertex="1">
+          <mxGeometry height="55" width="1710" x="35" y="25" as="geometry" />
+        </mxCell>
+        <mxCell id="persona" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF2F8;strokeColor=#5B9BD5;fontColor=#1F1F1F;fontSize=14;align=left;spacingLeft=16;verticalAlign=middle;" value="&lt;b&gt;Persona chính:&lt;/b&gt; Khách hàng cá nhân Việt Nam, từ đủ 18 tuổi, có CCCD gắn chip. &amp;nbsp; | &amp;nbsp; &lt;b&gt;Mục tiêu:&lt;/b&gt; Hoàn tất mở tài khoản, nhận số tài khoản và thiết lập eBanking/PIN hoàn toàn online." vertex="1">
+          <mxGeometry height="55" width="1710" x="35" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="backbone-label" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D9EAF7;strokeColor=#5B9BD5;fontColor=#16365C;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;" value="&lt;b&gt;BACKBONE&lt;/b&gt;&lt;br&gt;Các hoạt động chính theo hành trình khách hàng" vertex="1">
+          <mxGeometry height="120" width="190" x="35" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E78;strokeColor=#16365C;fontColor=#FFFFFF;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;A1. XÁC THỰC SỐ ĐIỆN THOẠI&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Bắt đầu hành trình và xác minh số điện thoại&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="290" x="245" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E78;strokeColor=#16365C;fontColor=#FFFFFF;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;A2. XÁC THỰC eKYC&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;CCCD, OCR, Face Matching và Liveness&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="290" x="550" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E78;strokeColor=#16365C;fontColor=#FFFFFF;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;A3. HOÀN THIỆN VÀ GỬI HỒ SƠ&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Kiểm tra thông tin, xác nhận điều khoản&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="290" x="855" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E78;strokeColor=#16365C;fontColor=#FFFFFF;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;A4. NHẬN KẾT QUẢ&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Kiểm tra CCCD trùng, tạo CIF và số tài khoản&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="290" x="1160" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="a5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#1F4E78;strokeColor=#16365C;fontColor=#FFFFFF;fontSize=15;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;A5. THIẾT LẬP eBANKING&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size:12px&quot;&gt;Tạo mật khẩu và mã PIN giao dịch&lt;/font&gt;" vertex="1">
+          <mxGeometry height="120" width="280" x="1465" y="165" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="a1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5B9BD5;strokeWidth=2;" target="a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5B9BD5;strokeWidth=2;" target="a3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5B9BD5;strokeWidth=2;" target="a4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="a4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#5B9BD5;strokeWidth=2;" target="a5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="r1-bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5FBF3;strokeColor=#82B366;dashed=1;" value="" vertex="1">
+          <mxGeometry height="330" width="1510" x="235" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="r1-label" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#70AD47;strokeColor=#548235;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;RELEASE 1 — MVP&lt;/b&gt;&lt;br&gt;&lt;br&gt;Must-have&lt;br&gt;Luồng thành công cơ bản&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Có thể bàn giao bản đầu tiên&lt;/font&gt;" vertex="1">
+          <mxGeometry height="330" width="190" x="35" y="305" as="geometry" />
+        </mxCell>
+        <mxCell id="us01" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US01 — Nhập số điện thoại&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn nhập SĐT để nhận mã OTP xác thực." vertex="1">
+          <mxGeometry height="85" width="280" x="250" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="us02" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US02 — Xác thực OTP&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn nhập OTP hợp lệ để tiếp tục mở tài khoản." vertex="1">
+          <mxGeometry height="85" width="280" x="250" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="us03" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US03 — Chụp CCCD&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn chụp hai mặt CCCD gắn chip để hệ thống xác thực giấy tờ." vertex="1">
+          <mxGeometry height="85" width="280" x="555" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="us04" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US04 — OCR thông tin CCCD&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn hệ thống tự trích xuất thông tin để không phải nhập thủ công." vertex="1">
+          <mxGeometry height="85" width="280" x="555" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="us05" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US05 — Xác thực khuôn mặt&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn thực hiện Face Matching và Liveness để chứng minh đúng chủ giấy tờ." vertex="1">
+          <mxGeometry height="100" width="280" x="555" y="515" as="geometry" />
+        </mxCell>
+        <mxCell id="us06" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US06 — Kiểm tra thông tin&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn kiểm tra thông tin OCR đã trích xuất trước khi gửi hồ sơ." vertex="1">
+          <mxGeometry height="85" width="280" x="860" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="us07" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US07 — Xác nhận và gửi hồ sơ&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn xác nhận điều khoản và gửi hồ sơ để ngân hàng xử lý." vertex="1">
+          <mxGeometry height="100" width="280" x="860" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="us08" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US08 — Kiểm tra CCCD trùng lặp&lt;/b&gt;&lt;br&gt;Là ngân hàng, tôi muốn kiểm tra CCCD với dữ liệu khách hàng chính thức trước khi tạo tài khoản." vertex="1">
+          <mxGeometry height="100" width="280" x="1165" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="us09" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US09 — Nhận số tài khoản&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn nhận thông báo kèm số tài khoản sau khi CIF và tài khoản được tạo thành công." vertex="1">
+          <mxGeometry height="100" width="280" x="1165" y="435" as="geometry" />
+        </mxCell>
+        <mxCell id="us10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US10 — Thiết lập mật khẩu&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn thiết lập mật khẩu eBanking để đăng nhập dịch vụ." vertex="1">
+          <mxGeometry height="85" width="270" x="1470" y="325" as="geometry" />
+        </mxCell>
+        <mxCell id="us11" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US11 — Thiết lập mã PIN&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn thiết lập mã PIN để xác thực giao dịch." vertex="1">
+          <mxGeometry height="85" width="270" x="1470" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="r2-bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF3;strokeColor=#D6B656;dashed=1;" value="" vertex="1">
+          <mxGeometry height="315" width="1510" x="235" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="r2-label" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFC000;strokeColor=#BF9000;fontColor=#1F1F1F;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;RELEASE 2&lt;/b&gt;&lt;br&gt;&lt;br&gt;Should-have&lt;br&gt;Xử lý lỗi, retry và các nhánh ngoại lệ&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Làm hành trình đầy đủ và an toàn hơn&lt;/font&gt;" vertex="1">
+          <mxGeometry height="315" width="190" x="35" y="655" as="geometry" />
+        </mxCell>
+        <mxCell id="us12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US12 — OTP không hợp lệ&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn được thông báo khi OTP sai và nhập lại không giới hạn để tiếp tục xác thực." vertex="1">
+          <mxGeometry height="105" width="280" x="250" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="us13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US13 — Chụp lại CCCD&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn chụp lại CCCD khi OCR thất bại và tổng số lần thất bại còn dưới 3." vertex="1">
+          <mxGeometry height="85" width="280" x="555" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="us14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US14 — Thực hiện lại khuôn mặt&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn thử lại Face Matching/Liveness khi chưa đủ 3 lần thất bại." vertex="1">
+          <mxGeometry height="85" width="280" x="555" y="770" as="geometry" />
+        </mxCell>
+        <mxCell id="us15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US15 — Xét duyệt thủ công&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn hồ sơ được chuyển xét duyệt thủ công khi tổng thất bại eKYC đạt 3." vertex="1">
+          <mxGeometry height="85" width="280" x="555" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="us16" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US16 — Kiểm tra điều kiện gửi&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn được cảnh báo khi hồ sơ chưa đủ điều kiện để hoàn thiện trước khi gửi lại." vertex="1">
+          <mxGeometry height="105" width="280" x="860" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="us17" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US17 — Từ chối CCCD trùng&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn nhận lý do rõ ràng khi CCCD đã tồn tại và hồ sơ bị từ chối." vertex="1">
+          <mxGeometry height="105" width="280" x="1165" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="us18" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US18 — Theo dõi trạng thái&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn biết hồ sơ đang xử lý, chờ xét duyệt thủ công, từ chối hay hoàn tất." vertex="1">
+          <mxGeometry height="105" width="280" x="1165" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="us19" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US19 — Kiểm tra mật khẩu/PIN&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn được cảnh báo khi mật khẩu hoặc PIN không đúng định dạng để sửa ngay." vertex="1">
+          <mxGeometry height="105" width="270" x="1470" y="675" as="geometry" />
+        </mxCell>
+        <mxCell id="r3-bg" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F4F8FD;strokeColor=#6C8EBF;dashed=1;" value="" vertex="1">
+          <mxGeometry height="170" width="1510" x="235" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="r3-label" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#2F5597;fontColor=#FFFFFF;fontStyle=1;fontSize=14;align=center;verticalAlign=middle;spacing=8;" value="&lt;b&gt;RELEASE 3&lt;/b&gt;&lt;br&gt;&lt;br&gt;Could-have&lt;br&gt;Tiện ích và cải tiến trải nghiệm" vertex="1">
+          <mxGeometry height="170" width="190" x="35" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="us20" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US20 — Mã giới thiệu&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn nhập mã giới thiệu nếu có." vertex="1">
+          <mxGeometry height="60" width="280" x="860" y="1010" as="geometry" />
+        </mxCell>
+        <mxCell id="us21" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US21 — Chọn điểm giao dịch&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn chọn điểm giao dịch thuận tiện." vertex="1">
+          <mxGeometry height="60" width="280" x="860" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="us22" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#1F1F1F;fontSize=13;align=left;verticalAlign=top;spacing=9;" value="&lt;b&gt;US22 — Thông báo đa kênh&lt;/b&gt;&lt;br&gt;Là khách hàng, tôi muốn nhận kết quả qua App, SMS và Email để không bỏ lỡ thông tin." vertex="1">
+          <mxGeometry height="85" width="280" x="1165" y="1010" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
