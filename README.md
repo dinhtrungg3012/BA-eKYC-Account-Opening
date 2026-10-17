@@ -1,122 +1,67 @@
-# Digital Account Opening with eKYC — Business Analysis Project
+Online Account Opening with eKYC
+Business Analyst portfolio · Individual training project
+A case study exploring how a new customer can open a bank account remotely through phone verification, CCCD capture, facial verification, and eBanking setup. The work covers requirements analysis, process modeling, UI prototyping, and API/data specifications.
+Author: Đào Đình Trung
+Target role: Business Analyst Intern / Fresher
+Duration: Approximately four months of guided coursework
+Contact: dinhtrungg3012@gmail.com
+This is a simulated training project, not a deployed banking product. Interviews and numerical targets are project assumptions. The uploaded documents are being aligned with the target MVP below.
 
-A Business Analyst training project focused on requirements elicitation, business process analysis, system requirements, and solution design for an online bank account-opening system with electronic identity verification (eKYC).
+Start here
+What you want to review	Open
+Project overview and BA deliverables	[Portfolio presentation — PPTX](05-portfolio/BA-eKYC-Portfolio.pptx)
+Customer journey and UI	[Prototype gallery](04-prototype/README.md) · Interactive Figma prototype
+Business problem, objectives, and scope	[BRD — PDF](01-requirements/BRD.pdf)
+Use cases and detailed requirements	[SRS — PDF](01-requirements/SRS.pdf)
+Process and system models	[Diagram index](02-process-and-design/README.md)
+API and data design	[Technical specifications](03-technical-specifications/README.md)
 
-> **Project note:** This is an individual training project. The bank and system are fictional, and all sample data and business rules are defined for demonstration purposes. This project does not represent a production banking system.
 
-**Author:** Dao Dinh Trung  
-**Target role:** Business Analyst Intern  
-**Contact:** dinhtrungg3012@gmail.com
+For a quick review, start with the presentation and prototype gallery. PPTX and XLSX files may need to be downloaded. The gallery is available if Figma cannot be opened.
+Business problem
+The case study assumes a branch-based account-opening process involving manual data entry and repeated information checks. The proposed journey lets customers submit identity information remotely, review extracted information, and receive feedback during onboarding.
+Reducing branch visits, repeated data entry, and onboarding friction are design objectives; no production results have been measured.
+My role and deliverables
+As the BA on this individual project, I translated the simulated business problem into the following artifacts:
+BA activity	Deliverable
+Explore stakeholder needs through a simulated Q&A	[Q&A log](01-requirements/qa-log.xlsx)
+Define business objectives and scope	[BRD](01-requirements/BRD.pdf)
+Specify use cases, rules, and system behavior	[SRS](01-requirements/SRS.pdf)
+Model processes and interactions	[BFD, BPMN, UML, and ERD](02-process-and-design/README.md)
+Organize user activities and MVP scope	User Story Map in the [Draw.io source](02-process-and-design/account-opening.drawio)
+Describe integration and data requirements	[API and database specifications](03-technical-specifications/README.md)
+Visualize the proposed experience	[Figma and screen gallery](04-prototype/README.md)
 
----
 
-## 1. Project Overview
+Target MVP
+Customer: A new individual customer with a valid CCCD and no existing CIF. Opening additional accounts for existing customers is outside this MVP.
+The main journey covers:
+1. Verify the phone number using OTP.
+2. Capture both sides of the CCCD and extract information using OCR.
+3. Review extracted identity information.
+4. Complete facial verification and liveness checks.
+5. Provide optional referral information and complete the application details and consent.
+6. Check for an existing customer and create the customer/account records when eligible.
+7. Notify the customer through the app and SMS.
+8. Set up eBanking credentials and a PIN, with confirmation of successful setup.
+Key scope decisions
+- OCR only: The prototype uses photos of the CCCD; NFC chip reading is not included. OCR extracts information and does not by itself prove identity.
+- Failed verification: Allow retries according to the specified rules; when online verification cannot be completed, stop the online flow and guide the customer to support or a branch. A manual-review queue is outside the target MVP.
+- Customer identifiers: Local MaKH and Core Banking MaCIF are separate identifiers.
+- Account and eBanking: An opened bank account and completed eBanking setup are separate outcomes.
+- PIN: This project covers PIN setup during onboarding; transfer execution is outside scope.
+- Integrations: Core Banking, eKYC, and SMS interactions are modeled in the documents. No live integration or backend implementation is included.
+Repository guide
+Folder	Contents
+[01-requirements](01-requirements/README.md)	BRD, SRS, simulated Q&A
+[02-process-and-design](02-process-and-design/README.md)	Diagram images and editable Draw.io source
+[03-technical-specifications](03-technical-specifications/README.md)	API and database specifications
+[04-prototype](04-prototype/README.md)	Figma link and 19 exported screens
+[05-portfolio](05-portfolio/README.md)	Project presentation
 
-Traditional bank account opening may require customers to visit a branch for identity verification, increasing processing time and operational effort.
 
-This project proposes an online account-opening flow that allows individual customers to submit their identity information and verify their identity electronically using their Citizen Identity Card (CCCD) and facial verification.
-
-The system includes automated verification and a manual review path for cases that cannot be verified successfully.
-
-## 2. Objectives and Scope
-
-### Objectives
-
-- Analyze the existing account-opening process and propose a digital alternative.
-- Define business requirements and functional requirements.
-- Model business processes and user interactions.
-- Specify API behavior, data structures, validation rules, and error handling.
-- Organize requirements into a User Story Map to support MVP planning.
-
-### In Scope
-
-- Phone number and OTP verification.
-- CCCD information extraction using OCR.
-- Face matching and liveness detection.
-- Automated verification decisions.
-- Manual review for unsuccessful verification cases.
-- Duplicate CCCD detection and rejection.
-
-### Out of Scope
-
-- Physical card issuance.
-- Core banking integration.
-- Mobile application implementation.
-- Production deployment and integration with real banking services.
-
-## 3. My Role and Contributions
-
-I performed the Business Analyst activities throughout the analysis and design stages:
-
-- Analyzed the AS-IS process and designed the TO-BE process.
-- Simulated requirement elicitation through a Q&A log.
-- Documented business requirements in the BRD and system requirements in the SRS.
-- Developed use cases, business process diagrams, activity diagrams, and sequence diagrams.
-- Designed the data model and documented API specifications.
-- Created a User Story Map to organize user activities, tasks, and release scope.
-
-## 4. eKYC Verification Flow
-
-The proposed verification flow consists of the following stages:
-
-1. **OTP Verification:** Verify the customer's phone number.
-2. **OCR:** Extract identity information from the CCCD.
-3. **Face Matching:** Compare the customer's selfie with the identity document portrait.
-4. **Liveness Detection:** Check whether the submitted face capture represents a live person.
-5. **Verification Decision:** Determine whether the case can proceed or requires manual review.
-6. **Final Outcome:** Continue account opening, route the case for review, or reject it when a defined rejection rule applies.
-
-The detailed conditions and transitions are documented in the project deliverables.
-
-## 5. Key Business Rules
-
-The following are sample business rules defined for this training project, not verified regulatory requirements.
-
-| Area | Proposed rule |
-|---|---|
-| Verification threshold | A confidence score threshold of 85% |
-| Verification failures | A maximum of three combined failures across OCR and face matching |
-| Failure handling | Route the case to manual review after the defined failure limit |
-| Duplicate identity | Reject a duplicate CCCD according to the defined business rule |
-| Security | Specify encryption and password-hashing requirements in the technical documentation |
-| Audit | Define audit-log retention requirements for the proposed system |
-
-**Important:** Numerical thresholds, security controls, retention periods, and regulatory references must be validated against the relevant requirements before being treated as production or compliance requirements.
-
-## 6. Project Deliverables
-
-| Category | Deliverable | Description |
-|---|---|---|
-| Analysis | [Q&A Log](01_Requirements/QA-Log.xlsx) | Requirement elicitation questions and answers |
-| Requirements | [Business Requirements Document (BRD)](01_Requirements/BRD.pdf) | Business objectives, scope, stakeholders, and requirements |
-| Requirements | [Software Requirements Specification (SRS)](01_Requirements/SRS.pdf) | Functional requirements and use cases |
-| Requirements | [User Story Map](02_Process_and_Design/User_Story_Map.png) | User activities, tasks, and release planning |
-| Process & Design | [Process and Design Diagrams](02_Process_and_Design/) | BPMN, BFD, Use Case, Activity, Sequence, and ERD diagrams |
-| Technical Specification | [API Specification](03_Technical_Specification/API_Specification.pdf) | API endpoints, validation, request/response structures, and error handling |
-| Technical Specification | [Database Specification](03_Technical_Specification/Database_Specification.pdf) | Database schema and data structure documentation |
-| Prototype | [UI Prototype](04_Prototype/) | Prototype link and supporting screen designs, if available |
-| Presentation | [Project Portfolio](05_Presentation/Portfolio_BA_Mo_TK_eKYC.pdf) | Summary of the project, scope, and BA deliverables |
-
-### Editable Source Files
-
-Editable source files, including draw.io diagrams and original Office documents, are maintained separately where applicable.
-
-## 7. Tools
-
-- **Draw.io:** BPMN, UML, ERD, and User Story Map.
-- **Microsoft Word:** BRD, SRS, and technical documentation.
-- **Microsoft Excel:** Requirement elicitation log.
-- **Microsoft PowerPoint:** Project presentation.
-- **SQL Server:** Database schema design.
-
-## 8. Key Learnings
-
-- Business rules must be consistent across requirements, process flows, sequence diagrams, and API specifications.
-- Requirement elicitation helps clarify assumptions and identify missing business decisions.
-- Data modeling and API specification can expose gaps in functional requirements.
-- A User Story Map helps connect user activities with backlog items and MVP scope.
-- Technical and regulatory assumptions should be explicitly documented and validated rather than presented as confirmed facts.
-
----
-
-*This repository is a learning portfolio demonstrating Business Analysis documentation and modeling skills. It is not a production banking application.*
+Tools and skills demonstrated
+Tools: Word, Excel, PowerPoint, Draw.io, Figma; SQL Server data modeling in the database specification.
+BA skills: Simulated requirements elicitation, scope definition, business rules, use-case specification, BPMN/UML modeling, user story mapping, UI prototyping, API requirements, and data modeling.
+Current document status
+The files represent coursework developed over several iterations. Cross-document alignment is still in progress, so some older wording, screen labels, or rules may differ from the target MVP above. This repository presents analysis and design deliverables, not an approved production baseline or evidence of executed UAT, vendor performance, or regulatory compliance.
