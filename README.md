@@ -16,7 +16,7 @@ A case study exploring how a new customer can open a bank account remotely throu
 
 | What you want to review | Open |
 | --- | --- |
-| Project overview and BA deliverables | [Portfolio presentation — PPTX](5.%20Portfolio/Portfolio_BA_Mo_TK_eKYC.pptx) |
+| Project overview and BA deliverables | [View portfolio — PDF](5.%20Portfolio/Portfolio_BA_Mo_TK_eKYC.pdf) |
 | Customer journey and UI | [Prototype screens](4.%20Prototype/) · [Interactive Figma prototype](https://www.figma.com/proto/zj0eHJI9i0ked7dSZaLMmR/%C4%90%C3%ACnh-Trung-K29?page-id=0%3A1&node-id=21-5&scaling=scale-down&content-scaling=fixed&starting-point-node-id=21%3A5) |
 | Business problem, objectives, and scope | [BRD — PDF](1.%20Requirements/T%C3%A0i%20li%E1%BB%87u%20BRD.pdf) |
 | Use cases and detailed requirements | [SRS — PDF](1.%20Requirements/T%C3%A0i%20li%E1%BB%87u%20SRS.pdf) |
