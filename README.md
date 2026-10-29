@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33590695/README.md)
 # Online Account Opening with eKYC
 
 **Business Analyst portfolio · Individual training project**
@@ -12,8 +11,6 @@ A case study exploring how a new customer can open a bank account remotely throu
 **Duration:** Approximately four months of guided coursework
 
 **Contact:** [dinhtrungg3012@gmail.com](mailto:dinhtrungg3012@gmail.com)
-
-> This is a simulated training project, not a deployed banking product. Interviews and numerical targets are project assumptions. The uploaded documents are being aligned with the target MVP below.
 
 ## Start here
 
@@ -57,7 +54,7 @@ The main journey covers:
 1. Verify the phone number using OTP.
 2. Capture both sides of the CCCD and extract information using OCR.
 3. Review extracted identity information.
-4. Complete facial verification and liveness checks.
+4. Record a facial video for Face Matching and Liveness checks.
 5. Provide optional referral information and complete the application details and consent.
 6. Check for an existing customer and create the customer/account records when eligible.
 7. Notify the customer through the app and SMS.
@@ -79,7 +76,7 @@ The main journey covers:
 | [1. Requirements](1.%20Requirements/) | BRD, SRS, simulated Q&A |
 | [2. Process&Design](2.%20Process%26Design/) | Diagram images and editable Draw.io source |
 | [3. Technical_Specification](3.%20Technical_Specification/) | API and database specifications |
-| [4. Prototype](4.%20Prototype/) | Figma link and 19 exported screens |
+| [4. Prototype](4.%20Prototype/) | Figma link and 17 exported screens |
 | [5. Portfolio](5.%20Portfolio/) | Project presentation |
 
 ## Tools and skills demonstrated
@@ -90,4 +87,4 @@ The main journey covers:
 
 ## Current document status
 
-The files represent coursework developed over several iterations. Cross-document alignment is still in progress, so some older wording, screen labels, or rules may differ from the target MVP above. This repository presents analysis and design deliverables, not an approved production baseline or evidence of executed UAT, vendor performance, or regulatory compliance.
+This repository contains the analysis and design deliverables of an individual BA training project. Prototype screens illustrate the customer journey; detailed business rules and validation requirements are documented in the BRD and SRS. No live banking integration or production deployment is included.
